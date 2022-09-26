@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 start_removing(){
 	echo 'DeBloater will start now. Type <yes> to conform : ';
 	read conf;
@@ -8,12 +7,12 @@ start_removing(){
 	then
 		echo "Conformed..."
 	
-		pkg_s=$(<text.txt)
+		pkg_s=$(<packages2.list)
 		i=0
 		for pkg	in $pkg_s
 		do
 			echo ""
-			echo "Uninstalling Package : $pkg_s"
+			echo "Uninstalling Package : $pkg"
 			adb shell pm uninstall -k --user 0 $pkg
 			((i++))
 		done
@@ -34,6 +33,5 @@ else
 	device=$(adb devices | tail -2 )
 	echo "$device"	
 	start_removing
-
 fi
 

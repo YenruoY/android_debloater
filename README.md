@@ -3,7 +3,7 @@ Removes / Disables packages on android though ADB(Android Debug Bridge).
 
 These apps are usually those apps which can't be removed by Android Package manager. Most of these apps are pre installed on andoid regardless of the user wants those apps or not. 
 
-This scrip needs a <b>Text</b>file named <b>package.list</b>, which will contain the name of the package to be removed. 
+This scrip needs a <b>Text file</b> named <b>package.list</b>, which will contain the name of the packages to be removed. 
 * <b>Note : One line should contain only one apk package names without any space in between</b>
 
 # Instructions 
