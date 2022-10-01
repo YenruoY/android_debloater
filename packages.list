@@ -11,6 +11,10 @@ com.google.android.syncadapters.calendar
 com.google.android.syncadapters.contacts
 com.google.or.lens
 com.google.android.appps.maps
+com.google.android.apps.youtube.music
+com.google.android.apps.tachyon
+com.google.android.apps.podcasts
+com.google.android.apps.docs
 
 com.miui.player
 com.miui.miservice

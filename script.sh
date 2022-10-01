@@ -7,7 +7,7 @@ start_removing(){
 	then
 		echo "Conformed..."
 	
-		pkg_s=$(<packages2.list)
+		pkg_s=$(<packages.list)
 		i=0
 		for pkg	in $pkg_s
 		do
