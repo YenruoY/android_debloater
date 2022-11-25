@@ -7,7 +7,8 @@ This scrip needs a <b>Text file</b> named <b>package.list</b>, which will contai
 * <b>Note : One line should contain only one apk package names without any space in between</b>
 
 # Instructions 
-  1. In the <b>package.list</b> file, insert all the package names which are to be removed
+  1. In the `package.list` file, insert all the package names which are to be removed
+    * Side note there are two more file `package2.list` and `google.list` containing some more packages.
   2. ADB <b>MUST</b> be installed and USB debugging must be turned ON in the android device
   3. Connect the android device with your computer through USB cable
   4. Run the script

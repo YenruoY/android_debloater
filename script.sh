@@ -1,13 +1,24 @@
 #!/bin/bash
 
+bold="$(tput bold)"
+red="$(tput setaf 1)"
+yellow="$(tput setaf 3)"
+reset="$(tput sgr0)"
+
 start_removing(){
-	echo 'DeBloater will start now. Type <yes> to conform : ';
+
+	pkg_name="google.list"
+
+	pkg_s=$(<$pkg_name)
+	echo "DeBloater will start now.";
+	echo "${yellow}[WARNING]${reset} The packages provided in the file named ${bold}${red} $pkg_name ${reset} will be removed";
+	echo "Type <yes> to conform : ";
+
 	read conf;
 	if [ $conf == "yes" ]
 	then
 		echo "Conformed..."
 	
-		pkg_s=$(<packages.list)
 		i=0
 		for pkg	in $pkg_s
 		do
@@ -18,7 +29,7 @@ start_removing(){
 		done
 
 	else
-		echo "NOT conformed"
+		echo "NOT conformed. Exiting..."
 	fi
 }
 
