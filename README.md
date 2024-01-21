@@ -4,12 +4,12 @@ Removes / Disables not uninstallable packages on Android though ADB(Android Debu
 
 These apps are usually can't be removed by Android Package manager. Most of these apps are pre installed on Android regardless of the user wants them or not. 
 
-The script needs a <b>Text file</b> named <b>package.list</b>, which will contain the name of the packages to be removed. 
+The script needs a <b>Text file</b> named <b>google.list</b>, which will contain the name of the packages to be removed. 
 * <b>Note : One line should contain only one apk package names without any space in between</b>.
 
 # Instructions 
 
-  1. In the `package.list` file, insert all the package names that are to be removed (there are two more file `package2.list` and `google.list` containing some more packages)
+  1. In the `google.list` file, insert all the package names that are to be removed (there are two more file `package.list` and `package2.list` containing some more packages)
   2. ADB <b>MUST</b> be installed and USB debugging must be turned ON in the Android device
   3. Connect the Android device with your computer through USB cable
   4. Run the script
